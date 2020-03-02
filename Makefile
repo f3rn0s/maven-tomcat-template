@@ -10,4 +10,5 @@ run:
 	sudo docker run -p 80:8080 testtomcat
 
 clean:
+	$(MAKE) -C web-src clean
 	sudo docker rmi testtomcat
